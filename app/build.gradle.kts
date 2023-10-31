@@ -84,8 +84,10 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.0")
 
     implementation("androidx.room:room-runtime:${rootProject.extra["room_version"]}")
+    implementation("androidx.databinding:compiler:3.2.0-alpha11")
     ksp("androidx.room:room-compiler:${rootProject.extra["room_version"]}")
     implementation("androidx.room:room-ktx:${rootProject.extra["room_version"]}")
+    implementation ("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 
     // Testing
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
